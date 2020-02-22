@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dcits.dao.ImageModuleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dcits.entity.ImageModule">
+        <id column="id" property="id" />
+        <result column="image_module" property="imageModule" />
+        <result column="http_url" property="httpUrl" />
+        <result column="source_image" property="sourceImage" />
+        <result column="module_name" property="moduleName" />
+        <result column="image_name" property="imageName" />
+        <result column="status" property="status"/>
+    </resultMap>
+    <insert id="insertImageModule">
+         insert into image_module (id ,image_module,http_url,source_image,module_name,
+         image_name,status,status_info) values
+        (
+        #{id,jdbcType=INTEGER},
+        #{imageModule,jdbcType=VARCHAR},
+        #{httpUrl,jdbcType=INTEGER},
+        #{sourceImage,jdbcType=VARCHAR},
+        #{moduleName,jdbcType=VARCHAR},
+        #{imageName,jdbcType=VARCHAR},
+        #{status,jdbcType=VARCHAR},
+        #{statusInfo,jdbcType=VARCHAR}
+        )
+    </insert>
+</mapper>
