@@ -27,4 +27,7 @@
         #{statusInfo,jdbcType=VARCHAR}
         )
     </insert>
+    <select id="getImageModulesByImageModule" resultMap="BaseResultMap">
+        select * from image_module where status = '0' and status_info = 'wait'
+    </select>
 </mapper>

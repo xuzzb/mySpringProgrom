@@ -1,7 +1,10 @@
 package com.dcits;
 
 import com.dcits.dao.ImageModuleMapper;
+import com.dcits.dao.VisitModuleUrlMapper;
 import com.dcits.entity.ImageModule;
+import com.dcits.entity.ImageModuleSource;
+import com.dcits.entity.VisitModuleUrl;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -29,6 +32,10 @@ import java.util.List;
 public class ImageParserTest {
     @Resource
     private ImageModuleMapper imageModuleMapper;
+
+    @Resource
+    private VisitModuleUrlMapper visitModuleUrlMapper;
+
     @Test
     public void test() throws IOException {
         String url = "http://www.mmff72.com/pxzj/7.html";
@@ -63,4 +70,52 @@ public class ImageParserTest {
             imageModuleMapper.insertImageModule(imageModule);
         }
     }
+
+
+
+    @Test
+    public void testVisitModuleUrl(){
+
+        VisitModuleUrl visitModuleUrl = visitModuleUrlMapper.selectPhotoImageById(1);
+        System.out.println(visitModuleUrl.toString());
+
+        String url = visitModuleUrl.getModuleUrl();
+        System.out.println(url);
+    }
+
+
+    @Test
+    public void testGetImageModule(){
+        List<ImageModule> imageModules = imageModuleMapper.getImageModulesByImageModule();
+        imageModules.forEach(
+                data->{
+                    System.out.println(data.getHttpUrl());
+                }
+        );
+    }
+
+    @Test
+    public void getImageSourceUrl(){
+        try {
+
+            String url = "http://www.mmff72.com/ikfl/850435.html";
+            Document document = null;
+            document = Jsoup.connect(url).get();
+            //  System.out.println(document);
+            Elements elements = document.getElementsByTag("img");
+            for (Element element:elements){
+                ImageModuleSource imageModuleSource = new ImageModuleSource();
+                int id = 1111;
+                imageModuleSource.setId(id);
+                System.out.println(element);
+                String src = element.toString().substring(10,89);
+                System.out.println(src);
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

@@ -4,6 +4,8 @@ package com.dcits.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.dcits.entity.ImageModule;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -14,4 +16,8 @@ import com.dcits.entity.ImageModule;
  */
 public interface ImageModuleMapper extends BaseMapper<ImageModule> {
     void insertImageModule(ImageModule imageModule);
+
+
+
+    List<ImageModule> getImageModulesByImageModule();
 }

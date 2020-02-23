@@ -12,5 +12,10 @@ import com.dcits.entity.ImageModuleSource;
  * @since 2020-02-21
  */
 public interface ImageModuleSourceMapper extends BaseMapper<ImageModuleSource> {
+
     void insertImageModuleSource(ImageModuleSource imageModuleSource);
+
+
+
+
 }

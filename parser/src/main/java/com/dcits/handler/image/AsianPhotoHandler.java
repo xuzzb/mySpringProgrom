@@ -1,7 +1,11 @@
 package com.dcits.handler.image;
 
 import com.dcits.dao.ImageModuleMapper;
+import com.dcits.dao.ImageModuleSourceMapper;
+import com.dcits.dao.VisitModuleUrlMapper;
 import com.dcits.entity.ImageModule;
+import com.dcits.entity.ImageModuleSource;
+import com.dcits.entity.VisitModuleUrl;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -25,6 +29,12 @@ import java.util.List;
 public class AsianPhotoHandler {
     @Resource
     private ImageModuleMapper imageModuleMapper;
+
+    @Resource
+    private VisitModuleUrlMapper visitModuleUrlMapper;
+
+    @Resource
+    private ImageModuleSourceMapper imageModuleSourceMapper;
     /**
      * 此处去访问网站，然后处理结果
      * 将获取到的亚洲图片，首页信息，保存在数据库中
@@ -37,7 +47,8 @@ public class AsianPhotoHandler {
     @Transactional
     public void getImagesMap(){
         try {
-            String url = "http://www.mmff72.com/pxzj/7.html";
+            VisitModuleUrl visitModuleUrl = visitModuleUrlMapper.selectPhotoImageById(1);
+            String url = visitModuleUrl.getModuleUrl();
             List<ImageModule> imageModuleLists = new ArrayList<ImageModule>();
             Document document = null;
             document = Jsoup.connect(url).get();
@@ -61,6 +72,7 @@ public class AsianPhotoHandler {
             for(ImageModule imageModule : imageModuleLists){
                 imageModuleMapper.insertImageModule(imageModule);
             }
+            getImageSourceUrl();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -77,9 +89,47 @@ public class AsianPhotoHandler {
      */
     public void getImageSourceUrl(){
         //1、查询数据库，获取AsianPhoto的需要处理的数据列表
+        List<ImageModule> imageModules = imageModuleMapper.getImageModulesByImageModule();
+        for (ImageModule imageModule:imageModules){
+            int id = imageModule.getId();
+            String imageUrl = imageModule.getSourceImage();
+            String moduleName = imageModule.getModuleName();
+            String imageName = imageModule.getImageName();
+            getImageSourceUrl(imageUrl,id,moduleName,imageName);
+        }
+
+
         //2、开始每一条处理，
         //3、修改状态
 
     }
+
+    public void getImageSourceUrl(String imageUrl,int id,String moduleName,String imageName){
+
+        try {
+            Document document = null;
+            document = Jsoup.connect(imageUrl).get();
+            //  System.out.println(document);
+            Elements elements = document.getElementsByTag("img");
+            for (Element element:elements){
+                ImageModuleSource imageModuleSource = new ImageModuleSource();
+                System.out.println(element);
+                imageModuleSource.setId(id);
+                if(element.toString().contains("http")) {
+                    String imageSourceUrl = element.toString().substring(10, 89);
+
+                    imageModuleSource.setImageModule(moduleName);
+                    imageModuleSource.setImageSourceUrl(imageSourceUrl);
+                    imageModuleSource.setHttpUrl(imageUrl);
+                    imageModuleSource.setImageName(imageName);
+                    imageModuleSourceMapper.insertImageModuleSource(imageModuleSource);
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
 }
