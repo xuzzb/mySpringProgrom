@@ -1,5 +1,7 @@
 package com.dcits.controller.image;
 
+import com.dcits.dao.ImageSourceIndexMapper;
+import com.dcits.entity.ImageSourceIndex;
 import com.dcits.handler.image.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -24,26 +27,21 @@ import java.util.Map;
 @Controller
 @RequestMapping("/image")
 public class ImageController {
-    private static Logger logger = LoggerFactory.getLogger(ImageController.class);
     @Resource
-    AsianPhotoHandler asianPhotoHandler;
-//    @Resource
-//    BeautifulPhotoHandler beautifulPhotoHandler;
-//    @Resource
-//    EuropePhotoHandler europePhotoHandler;
-//    @Resource
-//    LegAndWaPhotoHandler legAndWaPhotoHandler;
-//    @Resource
-//    MyselfPhotoHandler myselfPhotoHandler;
-    @RequestMapping("/asianPhoto")
-    public String asianPhoto(Model model, HttpServletRequest request){
-        String url = request.getRequestURI();
-        String ip = request.getRemoteAddr();
-        System.out.println(ip);
-        System.out.println(url);
-        Map<String,String> imageMaps = new HashMap<String,String>();
+    private ImageSourceIndexMapper imageSourceIndexMapper;
 
-        model.addAttribute("imageMaps",imageMaps);
+    private static Logger logger = LoggerFactory.getLogger(ImageController.class);
+
+    @RequestMapping("/asianPhoto")
+    public String asianPhoto(Model model,int indexId){
+        if(indexId == 0){
+            indexId = 0;
+        }
+        //获取首页需要展示的数据
+        List<ImageSourceIndex> imageSourceIndexLis =
+                imageSourceIndexMapper.getImageSourceIndexList(indexId);
+        Map<String,String> imageMaps = new HashMap<String,String>();
+        model.addAttribute("imageMaps",imageSourceIndexLis);
         System.out.println("print");
         return "page/image/galler";
     }

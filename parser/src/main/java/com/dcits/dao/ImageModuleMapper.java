@@ -16,8 +16,8 @@ import java.util.List;
  */
 public interface ImageModuleMapper extends BaseMapper<ImageModule> {
     void insertImageModule(ImageModule imageModule);
-
-
-
     List<ImageModule> getImageModulesByImageModule();
+    List<ImageModule> getImageModuleByImageModuleIndex();
+    ImageModule getImageModuleById(int id);
+    void updateImageModuleById(int id);
 }

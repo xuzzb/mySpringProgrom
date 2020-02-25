@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dcits.dao.ImageSourceIndexMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dcits.entity.ImageSourceIndex">
+        <result column="id" property="id" />
+        <result column="image_source_url" property="imageSourceUrl" />
+        <result column="http_url" property="httpUrl" />
+        <result column="image_name" property="imageName" />
+        <result column="image_module" property="imageModule" />
+    </resultMap>
+    <select id="getImageSourceIndexList" parameterType="int" resultMap="BaseResultMap">
+        select * from image_source_index limit #{id},15
+    </select>
+
+    <select id="getImageSourceById" parameterType="int" resultMap="BaseResultMap">
+        select * from image_source_index where id = #{id}
+    </select>
+</mapper>

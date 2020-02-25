@@ -28,6 +28,16 @@
         )
     </insert>
     <select id="getImageModulesByImageModule" resultMap="BaseResultMap">
-        select * from image_module where status = '0' and status_info = 'wait'
+        select * from image_module where status = '0' and status_info = 'wait' and module_name ='asianPhoto'
+    </select>
+    <select id="getImageModuleByImageModuleIndex" resultMap="BaseResultMap">
+         select * from image_module where  module_name ='asianPhoto'
+    </select>
+
+    <update id="updateImageModuleById" parameterType="int">
+      update image_module set status = 1,status_info = 'success' where id = #{id}
+    </update>
+    <select id="getImageModuleById" parameterType="int" resultMap="BaseResultMap">
+        select * from image_module where id = #{id}
     </select>
 </mapper>

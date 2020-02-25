@@ -20,4 +20,8 @@
         #{imageModule,jdbcType=VARCHAR}
         )
     </insert>
+    <select id="getImageModuleSourceById" parameterType="int" resultMap="BaseResultMap">
+        select * from image_module_source where id = #{id} limit 1
+    </select>
+
 </mapper>

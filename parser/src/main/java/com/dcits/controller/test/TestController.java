@@ -1,4 +1,4 @@
-package com.dcits.controller;
+package com.dcits.controller.test;
 
 import com.dcits.dao.ModuleMapper;
 import com.dcits.entity.Module;
