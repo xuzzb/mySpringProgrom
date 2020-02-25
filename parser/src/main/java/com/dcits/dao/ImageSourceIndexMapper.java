@@ -18,4 +18,7 @@ public interface ImageSourceIndexMapper extends BaseMapper<ImageSourceIndex> {
 
 
     ImageSourceIndex getImageSourceById(int id);
+
+
+    void insertImageSourceIndex(ImageSourceIndex imageSourceIndex);
 }

@@ -51,7 +51,7 @@ public class AsianPhotoHandler {
      * @param
      * @return
      */
-    @Scheduled(cron="*/1200 * * * * ?")
+    @Scheduled(cron="*/10 * * * * ?")
     @Transactional
     public void getImagesMap(){
         try {
@@ -108,7 +108,7 @@ public class AsianPhotoHandler {
      * 此处应该在添加一个失败重试次数，最多重试五次，超过五次就视为失败，最后
      * 集中同意处理
      */
-    @Scheduled(cron="*/600 * * * * ?")
+  @Scheduled(cron="*/20 * * * * ?")
     public void getImageSourceUrl(){
         //1、查询数据库，获取AsianPhoto的需要处理的数据列表
         List<ImageModule> imageModules = imageModuleMapper.getImageModulesByImageModule();
@@ -167,7 +167,7 @@ public class AsianPhotoHandler {
             e.printStackTrace();
         }
     }
-    @Scheduled(cron="*/20 * * * * ?")
+    @Scheduled(cron="*/120 * * * * ?")
     public void insertIndexImage(){
       logger.info("insertIndexImage");
         //从source表中查询
@@ -179,7 +179,7 @@ public class AsianPhotoHandler {
             int id = imageModule.getId();
             //去查询image_module_source
             ImageModuleSource imageModuleSource = imageModuleSourceMapper.getImageModuleSourceById(id);
-            logger.info("这是获取到的单个欢迎图片信息"+imageModuleSource.toString());
+            logger.info("这是获取到的单个欢迎图片信息"+imageModuleSource);
             ImageSourceIndex imageSourceIndex = new ImageSourceIndex();
             imageSourceIndex.setHttpUrl(imageModuleSource.getHttpUrl());
             imageSourceIndex.setId(imageModuleSource.getId());
@@ -188,14 +188,18 @@ public class AsianPhotoHandler {
             imageSourceIndex.setImageSourceUrl(imageModuleSource.getImageSourceUrl());
 
             ImageSourceIndex imageSourceIndexExtis = imageSourceIndexMapper.getImageSourceById(imageSourceIndex.getId());
-            logger.info("是否存在"+imageSourceIndexExtis.toString());
+            logger.info("是否存在"+imageSourceIndexExtis);
+
             if(imageSourceIndexExtis == null){
                 logger.info("插入"+imageSourceIndex.toString());
-                imageSourceIndexMapper.insert(imageSourceIndex);
+                imageSourceIndexMapper.insertImageSourceIndex(imageSourceIndex);
             }else{
                 logger.info("已经存在这个首页图片了，不需要在执行了");
             }
         }
     }
+
+
+
 
 }

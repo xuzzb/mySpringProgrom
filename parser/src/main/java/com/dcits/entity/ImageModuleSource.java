@@ -23,6 +23,16 @@ public class ImageModuleSource extends Model<ImageModuleSource> {
 
     private String imageModule;
 
+    private String downLoadStatus;
+
+    public String getDownLoadStatus() {
+        return downLoadStatus;
+    }
+
+    public void setDownLoadStatus(String downLoadStatus) {
+        this.downLoadStatus = downLoadStatus;
+    }
+
     public String getImageModule() {
         return imageModule;
     }

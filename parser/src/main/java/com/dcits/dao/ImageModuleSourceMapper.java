@@ -20,4 +20,8 @@ public interface ImageModuleSourceMapper extends BaseMapper<ImageModuleSource> {
 
     ImageModuleSource getImageModuleSourceById(int id);
 
+    List<ImageModuleSource> getImageModuleSourceList();
+
+    void updateDownLoadStatusByName(String imageSourceUrl);
+
 }

@@ -17,4 +17,15 @@
     <select id="getImageSourceById" parameterType="int" resultMap="BaseResultMap">
         select * from image_source_index where id = #{id}
     </select>
+    <insert id="insertImageSourceIndex" parameterType="com.dcits.entity.ImageSourceIndex">
+         insert into image_source_index (id ,image_source_url,http_url,image_name,image_module)
+         values
+        (
+        #{id,jdbcType=INTEGER},
+        #{imageSourceUrl,jdbcType=VARCHAR},
+        #{httpUrl,jdbcType=INTEGER},
+        #{imageName,jdbcType=VARCHAR},
+        #{imageModule,jdbcType=VARCHAR}
+        )
+    </insert>
 </mapper>

@@ -1,6 +1,8 @@
 package com.dcits.controller.image;
 
+import com.dcits.dao.ImagePathMapper;
 import com.dcits.dao.ImageSourceIndexMapper;
+import com.dcits.entity.ImagePath;
 import com.dcits.entity.ImageSourceIndex;
 import com.dcits.handler.image.*;
 import org.slf4j.Logger;
@@ -30,18 +32,25 @@ public class ImageController {
     @Resource
     private ImageSourceIndexMapper imageSourceIndexMapper;
 
+
+    @Resource
+    private ImagePathMapper imagePathMapper;
+
     private static Logger logger = LoggerFactory.getLogger(ImageController.class);
 
     @RequestMapping("/asianPhoto")
-    public String asianPhoto(Model model,int indexId){
-        if(indexId == 0){
-            indexId = 0;
-        }
+    public String asianPhoto(Model model){
+
+            int indexId = 0;
         //获取首页需要展示的数据
-        List<ImageSourceIndex> imageSourceIndexLis =
-                imageSourceIndexMapper.getImageSourceIndexList(indexId);
-        Map<String,String> imageMaps = new HashMap<String,String>();
-        model.addAttribute("imageMaps",imageSourceIndexLis);
+        List<ImagePath> imageSourceIndexLis =
+                imagePathMapper.getImagePath(indexId);
+        Map<String,String> imageMap = new HashMap<>();
+        for(ImagePath imagePath:imageSourceIndexLis){
+            imageMap.put(imagePath.getImagePath(),imagePath.getImagePath());
+            System.out.println(imagePath.toString());
+        }
+        model.addAttribute("imageMaps",imageMap);
         System.out.println("print");
         return "page/image/galler";
     }
