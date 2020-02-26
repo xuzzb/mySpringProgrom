@@ -22,6 +22,12 @@
 
 
     <select id="getImagePath" parameterType="int" resultMap="BaseResultMap">
-        select * from image_path limit #{index},3
+        select * from image_path limit #{index},10
+    </select>
+    <select id="getImagePathById" parameterType="int" resultMap="BaseResultMap">
+        select * from image_path where id = #{id} limit 1
+    </select>
+    <select id="getImagePathInfoById" parameterType="int" resultMap="BaseResultMap">
+        select * from image_path where id = #{id}
     </select>
 </mapper>

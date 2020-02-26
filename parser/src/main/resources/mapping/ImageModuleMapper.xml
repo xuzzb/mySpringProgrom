@@ -28,11 +28,12 @@
         #{statusInfo,jdbcType=VARCHAR}
         )
     </insert>
-    <select id="getImageModulesByImageModule" resultMap="BaseResultMap">
-        select * from image_module where status = '0' and status_info = 'wait' and module_name ='asianPhoto'
+    <select id="getImageModulesByImageModule" parameterType="string" resultMap="BaseResultMap">
+        select * from image_module where status = '0' and status_info = 'wait'
+        and module_name =#{moduleName}
     </select>
-    <select id="getImageModuleByImageModuleIndex" resultMap="BaseResultMap">
-         select * from image_module where  module_name ='asianPhoto'
+    <select id="getImageModuleByImageModuleIndex" parameterType="string" resultMap="BaseResultMap">
+         select * from image_module where module_name=#{moduleName} limit 100
     </select>
 
     <update id="updateImageModuleById" parameterType="int">
