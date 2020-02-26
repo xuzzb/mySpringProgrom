@@ -86,12 +86,7 @@ public class ImageParserTest {
 
     @Test
     public void testGetImageModule(){
-        List<ImageModule> imageModules = imageModuleMapper.getImageModulesByImageModule();
-        imageModules.forEach(
-                data->{
-                    System.out.println(data.getHttpUrl());
-                }
-        );
+
     }
 
     @Test
