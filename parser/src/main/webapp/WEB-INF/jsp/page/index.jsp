@@ -73,7 +73,7 @@
                 <li class="active"><a href="verfity"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
                 <li class="menu-list"><a href=""><i class="fa fa-laptop"></i> <span>Image</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="../image/asianPhoto">AsianPhoto</a></li>
+                        <li><a href="../image/asianPhoto?indexId=0">AsianPhoto</a></li>
                         <li><a href="">BeautifulPhoto</a></li>
                         <li><a href="../image/image">BeautifulPhoto</a></li>
                         <li><a href="">EuropePhoto</a></li>

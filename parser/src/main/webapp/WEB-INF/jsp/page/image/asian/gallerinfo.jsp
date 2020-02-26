@@ -397,7 +397,7 @@
                          <a>      ${imageMaps}</a>
                                 <c:forEach items="${imageMaps}" var="image">
                                     <div class="images item " >
-                                        <a href="../image/asianPhotoInfo?idString=?${image.key}") data-toggle="modal">
+                                        <a href="../image/asianPhotoInfo?idString=?${image.key}" data-toggle="modal">
                                             <img src="${image.value}" alt="" />
                                         </a>
                                         <p>${image.key} </p>
@@ -408,11 +408,6 @@
                             <div class="col-md-12 text-center clearfix">
                                 <ul class="pagination">
                                     <li><a href="../image/asianPhoto?indexId=0">«</a></li>
-                                    <li><a href="../image/asianPhoto?indexId=1">1</a></li>
-                                    <li><a href="../image/asianPhoto?indexId=2">2</a></li>
-                                    <li><a href="../image/asianPhoto?indexId=3">3</a></li>
-                                    <li><a href="../image/asianPhoto?indexId=4">4</a></li>
-                                    <li><a href="../image/asianPhoto?indexId=5">5</a></li>
                                     <li><a href="../image/asianPhoto?indexId=0">»</a></li>
                                 </ul>
                             </div>
