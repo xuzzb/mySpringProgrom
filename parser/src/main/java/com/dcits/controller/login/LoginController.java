@@ -16,13 +16,11 @@ public class LoginController {
     private static Logger logger = LoggerFactory.getLogger(LoginController.class);
     @Resource
     private UserLoginMapper userLoginMapper;
-
     @RequestMapping("/login")
     public String login(){
         logger.info("pring the login page");
         return "page/login";
     }
-
     /**
      * 开始验证是否登录成功
      * @return
@@ -42,8 +40,7 @@ public class LoginController {
         if(userLogins != null && userLogins.size() > 0){
             return "page/index";
         }else {
-            return "page/index";
+            return "page/failed";
         }
     }
-
 }

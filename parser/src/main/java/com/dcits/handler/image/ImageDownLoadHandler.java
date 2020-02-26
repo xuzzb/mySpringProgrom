@@ -110,7 +110,7 @@ public class ImageDownLoadHandler {
     /**
      * 定时任务，去查询表中路径，image_module_source然后下载图片
      */
-    //@Scheduled(cron="*/20 * * * * ?")
+   // @Scheduled(cron="*/20 * * * * ?")
     public void getImageSource(){
         List<ImageModuleSource> imageModuleSources =
                 imageModuleSourceMapper.getImageModuleSourceList();
