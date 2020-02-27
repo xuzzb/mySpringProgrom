@@ -73,14 +73,15 @@
                 <li class="active"><a href="verfity"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
                 <li class="menu-list"><a href=""><i class="fa fa-laptop"></i> <span>Image</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="../image/asianPhoto?indexId=0">AsianPhoto</a></li>
-                        <li><a href="">BeautifulPhoto</a></li>
-                        <li><a href="../image/image">BeautifulPhoto</a></li>
-                        <li><a href="">EuropePhoto</a></li>
-                        <li><a href="">LegAndWaPhoto</a></li>
+                        <li><a href="../asian/asianPhoto?indexId=0">AsianPhoto</a></li>
+                        <li><a href="../beautiful/beautifulPhoto?indexId=0">BeautifulPhoto</a></li>
+                        <li><a href="../europe/europePhoto?indexId=0">EuropePhoto</a></li>
+                        <li><a href="../legAndWa/legAndWaPhoto?indexId=0">LegAndWaPhoto</a></li>
+                        <li><a href="../myself/myselfPhoto?indexId=0">MyselfPhoto</a></li>
 
                     </ul>
                 </li>
+                <!--待开发-->
                 <li class="menu-list"><a href="vertify"><i class="fa fa-book"></i> <span>novel</span></a>
                     <ul class="sub-menu-list">
                         <li><a href="../general.html">CityPassionNovel</a></li>

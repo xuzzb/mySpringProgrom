@@ -397,7 +397,7 @@
                             <div id="gallery" class="media-gal">
                                 <c:forEach items="${imageMaps}" var="image">
                                     <div class="images item " >
-                                        <a href="../asian/asianPhotoInfo?idString=?${image.key}") data-toggle="modal">
+                                        <a href="../asian/asianPhotoInfo?indexId=0&idString=${image.key}") data-toggle="modal">
                                             <img src="${image.value}" alt="" />
                                         </a>
                                         <p>${image.key} </p>
