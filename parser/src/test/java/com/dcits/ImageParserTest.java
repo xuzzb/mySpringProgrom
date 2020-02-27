@@ -5,18 +5,18 @@ import com.dcits.dao.VisitModuleUrlMapper;
 import com.dcits.entity.ImageModule;
 import com.dcits.entity.ImageModuleSource;
 import com.dcits.entity.VisitModuleUrl;
+import com.dcits.handler.image.inter.impl.ImageHandlerInterfaceImpl;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -111,6 +111,19 @@ public class ImageParserTest {
             e.printStackTrace();
         }
     }
-
+    @Autowired
+    private ImageHandlerInterfaceImpl imageHandlerInterfaceImpl;
+    /**
+     * 此处去访问网站亚洲图片模块，并且将首页的链接地址放在image_module表中
+     * @param
+     * @return
+     */
+    @Test
+    public void getImagesMap(){
+        int id = 1;
+        String moduleName = "asianPhoto";
+        System.out.println("dddddddddddddddddddddd");
+        imageHandlerInterfaceImpl.getImagesMap(id,moduleName);
+    }
 
 }
