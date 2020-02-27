@@ -58,15 +58,14 @@
 
             <!--sidebar nav start-->
             <ul class="nav nav-pills nav-stacked custom-nav">
-
                 <li><a href="index.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
                 <li class="menu-list nav-active"><a href=""><i class="fa fa-laptop"></i> <span>Image</span></a>
                     <ul class="sub-menu-list">
-                        <li><a href="../image/asianPhoto?indexId=0"> AsianPhoto</a></li>
-                        <li><a href="gallery.html">BeautifulPhoto</a></li>
-                        <li><a href="calendar.html"> BeautifulPhoto</a></li>
-                        <li><a href="tree_view.html">EuropePhoto</a></li>
-                        <li><a href="nestable.html"> Nestable</a></li>
+                        <li class="active"><a href="../asian/asianPhoto?indexId=0">AsianPhoto</a></li>
+                        <li><a href="../beautiful/beautifulPhoto?indexId=0">BeautifulPhoto</a></li>
+                        <li><a href="../europe/europePhoto?indexId=0">EuropePhoto</a></li>
+                        <li><a href="../legAndWa/legAndWaPhoto?indexId=0">LegAndWaPhoto</a></li>
+                        <li><a href="../myself/myselfPhoto?indexId=0">MyselfPhoto</a></li>
                     </ul>
                 </li>
 
@@ -394,7 +393,6 @@
 
 
                             <div id="gallery" class="media-gal">
-                         <a>      ${imageMaps}</a>
                                 <c:forEach items="${imageMaps}" var="image">
                                     <div class="images item " >
                                         <a href="../image/asianPhotoInfo?idString=?${image.key}" data-toggle="modal">
@@ -407,8 +405,8 @@
 
                             <div class="col-md-12 text-center clearfix">
                                 <ul class="pagination">
-                                    <li><a href="../image/asianPhoto?indexId=0">«</a></li>
-                                    <li><a href="../image/asianPhoto?indexId=0">»</a></li>
+                                    <li><a href="../asian/asianPhoto?indexId=0">«</a></li>
+                                    <li><a href="../asian/asianPhoto?indexId=0">»</a></li>
                                 </ul>
                             </div>
 

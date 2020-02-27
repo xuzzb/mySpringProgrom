@@ -2,7 +2,6 @@ package com.dcits.handler.image.inter.impl;
 
 import com.dcits.dao.*;
 import com.dcits.entity.*;
-import com.dcits.handler.image.inter.ImageHandlerInterface;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -23,7 +22,7 @@ import java.util.List;
      * 用于图片处理公共方法
      */
 @Component
-public  class ImageHandlerInterfaceImpl implements ImageHandlerInterface {
+public  class ImageHandlerInterfaceImpl{
         private final Logger logger = LoggerFactory.getLogger(ImageHandlerInterfaceImpl.class);
         @Resource
         private ImageModuleMapper imageModuleMapper;
@@ -38,7 +37,12 @@ public  class ImageHandlerInterfaceImpl implements ImageHandlerInterface {
         private ImagePathIndexMapper imagePathIndexMapper;
         @Resource
         private ImagePathMapper imagePathMapper;
-        @Override
+
+    /**
+     * 根据Id和moduleName从Visit_image表中获取首页地址
+     * @param id
+     * @param moduleName
+     */
         public void getImagesMap(int id, String moduleName) {
             try {
                 //开始访问存放的首页网站地址，通常来说，一个模块只有一个
@@ -50,7 +54,8 @@ public  class ImageHandlerInterfaceImpl implements ImageHandlerInterface {
                 document = Jsoup.connect(url).get();
                 logger.info("创建Document,并且获取到Document的信息"+document);
                 logger.info("开始过滤信息.....................");
-                Elements elements = document.getElementsByAttributeValueContaining("href","/ikfl/");
+                Elements elements = document.getElementsByAttributeValueContaining(
+                        "href","/ikfl/");
                 for (Element element:elements){
                     logger.info("过滤出的链接信息："+element.toString());
                     logger.info("新建一个imageMoudle对象用于存放首页中的每一条记录信息");
@@ -94,7 +99,6 @@ public  class ImageHandlerInterfaceImpl implements ImageHandlerInterface {
          * @param moduleName
          * @return
          */
-        @Override
         public List<ImageModule> getImageModule(String moduleName) {
             List<ImageModule> imageModules = imageModuleMapper.getImageModulesByImageModule(moduleName);
             imageModules.forEach(data->{
@@ -172,4 +176,22 @@ public  class ImageHandlerInterfaceImpl implements ImageHandlerInterface {
                 }
             }
         }
+
+    /**
+     * 这是在image_module中查询为访问地址，
+     * 访问后将数据放入到image_module_source中去
+        然后修改原来的image_moduel中的访问地址的status=1 and status_info = 'Success'
+     * @param module
+     */
+    public void getImageSourceUrlToinsert(String module) {
+        List<ImageModule> imageModules = getImageModule(module);
+        for (ImageModule imageModule:imageModules){
+            int id = imageModule.getId();
+            String imageUrl = imageModule.getSourceImage();
+            String moduleName = imageModule.getModuleName();
+            String imageName = imageModule.getImageName();
+            getImageSourceUrl(imageUrl,id,moduleName,imageName);
+            imageModuleMapper.updateImageModuleById(id);
+        }
     }
+}

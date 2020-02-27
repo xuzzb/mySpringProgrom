@@ -1,4 +1,4 @@
-package com.dcits.handler.image;
+package com.dcits.handler.image.inter.download;
 
 import org.springframework.boot.autoconfigure.batch.BatchProperties;
 import org.springframework.context.annotation.Configuration;

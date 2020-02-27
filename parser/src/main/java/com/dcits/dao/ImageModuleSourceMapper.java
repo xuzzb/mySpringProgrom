@@ -20,7 +20,11 @@ public interface ImageModuleSourceMapper extends BaseMapper<ImageModuleSource> {
 
     ImageModuleSource getImageModuleSourceById(int id);
 
-    List<ImageModuleSource> getImageModuleSourceList();
+    /**
+     * 获取image_moduel_source表中的down_load_status = 0 的需要下载的数据集合
+     * @return
+     */
+    List<ImageModuleSource> getImageModuleSourceList(String moduleName);
 
     void updateDownLoadStatusByName(String imageSourceUrl);
 

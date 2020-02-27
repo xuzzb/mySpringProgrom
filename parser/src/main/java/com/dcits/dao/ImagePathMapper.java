@@ -19,7 +19,12 @@ public interface ImagePathMapper extends BaseMapper<ImagePath> {
 
     List<ImagePath> getImagePath(int index);
 
-    List<ImagePath> getImagePathInfoById(@Param("id")int id);
+    /**
+     * 根据Id获取image_path表中所有这个Id的图片,也通用具有分页功能
+     * @param id
+     * @return
+     */
+    List<ImagePath> getImagePathInfoById(@Param("id")int id,@Param("start") int start);
 
     ImagePath getImagePathById(int id);
 }

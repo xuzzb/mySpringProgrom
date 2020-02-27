@@ -17,7 +17,15 @@ import java.io.IOException;
 public class subMain {
 
     public static void main(String[] args){
-        getImageSourceUrl("http://www.mmff72.com/ikfl/851879.html");
+       // getImageSourceUrl("http://www.mmff72.com/ikfl/851879.html");
+
+
+
+       String url = "http://p7.urlpic.club/pic1893/upload/image/20190220/22008352148.jpg";
+
+        String fileName = url.substring(url.lastIndexOf("/"),url.lastIndexOf("jpg")+3);
+        System.out.println(fileName);
+
     }
     public static void getImageSourceUrl(String imageUrl){
 
