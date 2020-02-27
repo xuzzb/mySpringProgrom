@@ -28,6 +28,6 @@
         select * from image_path where id = #{id} limit 1
     </select>
     <select id="getImagePathInfoById" parameterType="int" resultMap="BaseResultMap">
-        select * from image_path where id = #{id}
+        select * from image_path where id = #{id} limit #{start},10
     </select>
 </mapper>

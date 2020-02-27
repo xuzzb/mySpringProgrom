@@ -23,7 +23,7 @@
         #{imageName,jdbcType=VARCHAR}
         )
     </insert>
-    <select id="getImagePathIndexList" parameterType="int" resultMap="BaseResultMap">
-          select * from image_path_index limit #{index},10
+    <select id="getImagePathIndexList" parameterType="com.dcits.entity.IndexModule" resultMap="BaseResultMap">
+          select * from image_path_index where module_name = #{moduleName} limit #{index},10
     </select>
 </mapper>
