@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dcits.dao.ImagePathIndexMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dcits.entity.ImagePathIndex">
+        <result column="id" property="id" />
+        <result column="module_name" property="moduleName" />
+        <result column="image_path" property="imagePath" />
+        <result column="image_name" property="imageName" />
+    </resultMap>
+    <select id="getImagePathInfoByIf" parameterType="int" resultMap="BaseResultMap">
+        select * from image_path_index where id = #{id}
+    </select>
+
+    <insert id="insertImagePathIndexInfo" parameterType="com.dcits.entity.ImagePathIndex" >
+         insert into image_path_index (id ,module_name,image_path,image_name)
+         values
+        (
+        #{id,jdbcType=INTEGER},
+        #{moduleName,jdbcType=VARCHAR},
+        #{imagePath,jdbcType=INTEGER},
+        #{imageName,jdbcType=VARCHAR}
+        )
+    </insert>
+    <select id="getImagePathIndexList" parameterType="com.dcits.entity.IndexModule" resultMap="BaseResultMap">
+          select * from image_path_index where module_name = #{moduleName} limit #{index},10
+    </select>
+</mapper>

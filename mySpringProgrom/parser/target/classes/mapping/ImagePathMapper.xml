@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dcits.dao.ImagePathMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dcits.entity.ImagePath">
+        <result column="id" property="id" />
+        <result column="module_name" property="moduleName" />
+        <result column="image_path" property="imagePath" />
+        <result column="image_name" property="imageName" />
+    </resultMap>
+    <insert id="insertImagePathInfo" parameterType="com.dcits.entity.ImagePath" >
+         insert into image_path (id ,module_name,image_path,image_name)
+         values
+        (
+        #{id,jdbcType=INTEGER},
+        #{moduleName,jdbcType=VARCHAR},
+        #{imagePath,jdbcType=INTEGER},
+        #{imageName,jdbcType=VARCHAR}
+        )
+    </insert>
+
+
+    <select id="getImagePath" parameterType="int" resultMap="BaseResultMap">
+        select * from image_path limit #{index},3
+    </select>
+</mapper>

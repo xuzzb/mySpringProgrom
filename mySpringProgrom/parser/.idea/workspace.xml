@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6de44dff-ff44-44b6-9c37-3dc06a8f27e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/BeautifulPhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/EuropePhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/LegAndWaPhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/MyselfPhotoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/entity/IndexModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/ImageDownLaodByXun.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/main/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dcits/main/ImageLoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/AsianImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/AsianImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImageModuleSourceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImageModuleSourceMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathIndexMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathIndexMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/AsianPhotoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/AsianPhotoHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/BeautifulPhotoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/BeautifulPhotoHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/ImageDownLoadHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/ImageDownLoadHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/ScheduleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/ScheduleConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/ImageHandlerInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/impl/ImageHandlerInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/impl/ImageHandlerInterfaceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dcits/main/subMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dcits/main/subMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ImageModuleSourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ImageModuleSourceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ImagePathIndexMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ImagePathIndexMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/ImagePathMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/ImagePathMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/galler.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/asian.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/gallerinfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/asianInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dcits/ImageParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dcits/ImageParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/controller/image/ImageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/controller/login/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dcits/controller/login/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/dao/ImageModuleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dcits/dao/ImageModuleMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/dao/ImageModuleSourceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dcits/dao/ImageModuleSourceMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/dao/ImagePathMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dcits/dao/ImagePathMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/handler/image/AsianPhotoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dcits/handler/image/AsianPhotoHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/handler/image/BeautifulPhotoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dcits/handler/image/BeautifulPhotoHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/handler/image/ImageDownLoadHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/handler/image/ImageDownLoadHandler$TrustAllManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/handler/image/ImageDownLoadHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dcits/main/subMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dcits/main/subMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ImageModuleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ImageModuleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ImageModuleSourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ImageModuleSourceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ImagePathMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ImagePathMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/image/asianPhoto/71be6e02ed194d474f753517436f6d04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/image/asianPhoto/71be6e02ed194d474f753517436f6d04.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/dcits/ImageParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/dcits/ImageParserTest.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/AsianImageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1248">
+              <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1824">
+              <caret line="76" column="90" selection-start-line="76" selection-start-column="76" selection-end-line="76" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/beautiful/beautiful.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9600">
+              <caret line="400" column="91" selection-start-line="400" selection-start-column="91" selection-end-line="400" selection-end-column="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/asian.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9576">
+              <caret line="399" column="83" selection-start-line="399" selection-start-column="83" selection-end-line="399" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/asianInfo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9816">
+              <caret line="409" column="78" selection-start-line="409" selection-start-column="78" selection-end-line="409" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/BeautifulPhotoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="66" column="61" lean-forward="true" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ImagePathMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="30" column="67" lean-forward="true" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/beautiful/beautifulInfo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1222">
+              <caret line="413" column="116" selection-start-line="413" selection-start-column="116" selection-end-line="413" selection-end-column="116" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/entity/IndexModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="21" />
+              <folding>
+                <element signature="e#218#219#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#441#442#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>menu-list</find>
+      <find>getImageModuleSourceById</find>
+      <find>imageModuleSourceMapper</find>
+      <find>page-</find>
+      <find>page-h</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/ImageHandlerInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/ImageHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/impl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/login/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/impl/ImageHand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/impl/ImageHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/ImageModuleMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/ScheduleConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/ImageDownLoadHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/ImageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/galler.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/gallerinfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/BeautifulPhotoHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/EuropePhotoHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/ImageDownLoadHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/LegAndWaPhotoHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/MyselfPhotoHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/EuropePhotoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/LegAndWaPhotoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/MyselfPhotoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/ImageHandlerInterface.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/dcits/ImageParserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/impl/ImageHandlerInterfaceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImageModuleSourceMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/AsianPhotoHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/ImageModuleSourceMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/main/imageDownLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/main/GetImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/main/ImageLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/main/HttpRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/HttpRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/main/subMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/ImageDownLaodByXun.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/ImageDownLoadHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/handler/image/BeautifulPhotoHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/entity/IndexNodule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathIndexMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/ImagePathIndexMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/galler.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/gallerinfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/beautiful/galler.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/beautiful/gallerinfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/asian.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/beautiful/beautiful.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/AsianImageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/asianInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dcits/controller/image/BeautifulPhotoController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/ImagePathMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/beautiful/beautifulInfo.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="parser" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="parser" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="80" />
+    <option name="y" value="410" />
+    <option name="width" value="1750" />
+    <option name="height" value="970" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dcits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dcits" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dcits" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dcits" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="asian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="beautiful" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dcits" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/mySpringBootProgrom/parser/src/main/java/com/dcits/dao/ImagePathMapper.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582725731145" />
+    <property name="last_opened_file_path" value="D:/Ideajava/next_film" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mySpringBootProgrom\parser\src\main\java\com\dcits\controller\image" />
+      <recent name="D:\mySpringBootProgrom\parser\src\main\resources\mapping" />
+      <recent name="D:\mySpringBootProgrom\parser\src\main\java\com\dcits\dao" />
+      <recent name="D:\mySpringBootProgrom\parser\src\main\java\com\dcits\entity" />
+      <recent name="D:\Ideajava\parser\src\main\resources\mapping" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dcits.handler.image.inter.download" />
+      <recent name="com.dcits.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mySpringBootProgrom\parser\src\main\webapp\WEB-INF\jsp\page\image\asian" />
+      <recent name="D:\mySpringBootProgrom\parser\src\main\java\com\dcits\handler\package" />
+      <recent name="D:\Ideajava\parser\src\main\webapp\WEB-INF\jsp\page\image\asian" />
+      <recent name="D:\Ideajava\parser\src\main\webapp\WEB-INF\jsp" />
+      <recent name="D:\Ideajava\parser\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.App">
+    <configuration name="GetImage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dcits.main.GetImage" />
+      <module name="parser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dcits.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageLoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dcits.main.ImageLoad" />
+      <module name="parser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dcits.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="subMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dcits.main.subMain" />
+      <module name="parser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dcits.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageParserTest.getImagesMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dcits.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dcits" />
+      <option name="MAIN_CLASS_NAME" value="com.dcits.ImageParserTest" />
+      <option name="METHOD_NAME" value="getImagesMap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="parser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dcits.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.dcits.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.App" />
+      <item itemvalue="JUnit.ImageParserTest.getImagesMap" />
+      <item itemvalue="Application.GetImage" />
+      <item itemvalue="Application.ImageLoad" />
+      <item itemvalue="Application.subMain" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.App" />
+        <item itemvalue="Application.subMain" />
+        <item itemvalue="Application.ImageLoad" />
+        <item itemvalue="Application.GetImage" />
+        <item itemvalue="JUnit.ImageParserTest.getImagesMap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6de44dff-ff44-44b6-9c37-3dc06a8f27e1" name="Default Changelist" comment="" />
+      <created>1581945560646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581945560646</updated>
+      <workItem from="1581945564803" duration="2441000" />
+      <workItem from="1582012391195" duration="1548000" />
+      <workItem from="1582015125427" duration="1901000" />
+      <workItem from="1582028073894" duration="1965000" />
+      <workItem from="1582076295188" duration="1880000" />
+      <workItem from="1582088506207" duration="633000" />
+      <workItem from="1582102628220" duration="7251000" />
+      <workItem from="1582185793680" duration="105000" />
+      <workItem from="1582193898010" duration="532000" />
+      <workItem from="1582194559050" duration="346000" />
+      <workItem from="1582195051108" duration="9218000" />
+      <workItem from="1582267628279" duration="8176000" />
+      <workItem from="1582284988462" duration="8042000" />
+      <workItem from="1582296173891" duration="1743000" />
+      <workItem from="1582339315621" duration="535000" />
+      <workItem from="1582351699739" duration="393000" />
+      <workItem from="1582463170039" duration="6871000" />
+      <workItem from="1582545374910" duration="5334000" />
+      <workItem from="1582604995329" duration="5019000" />
+      <workItem from="1582627606639" duration="12502000" />
+      <workItem from="1582687871619" duration="8257000" />
+      <workItem from="1582699609394" duration="1723000" />
+      <workItem from="1582704708709" duration="9311000" />
+      <workItem from="1582719223229" duration="6499000" />
+      <workItem from="1582773598108" duration="1178000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ImageParserTest_getImageSourceUrl - 2020.02.23 at 22h 24m 07s.xml">
+      <configuration name="ImageParserTest.getImageSourceUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImageSourceUrl - 2020.02.23 at 22h 24m 11s.xml">
+      <configuration name="ImageParserTest.getImageSourceUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImageSourceUrl - 2020.02.23 at 22h 24m 59s.xml">
+      <configuration name="ImageParserTest.getImageSourceUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImageSourceUrl - 2020.02.23 at 22h 26m 07s.xml">
+      <configuration name="ImageParserTest.getImageSourceUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImageSourceUrl - 2020.02.23 at 22h 36m 02s.xml">
+      <configuration name="ImageParserTest.getImageSourceUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImagesMap - 2020.02.26 at 18h 12m 21s.xml">
+      <configuration name="ImageParserTest.getImagesMap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImagesMap - 2020.02.26 at 18h 13m 10s.xml">
+      <configuration name="ImageParserTest.getImagesMap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImagesMap - 2020.02.26 at 18h 14m 44s.xml">
+      <configuration name="ImageParserTest.getImagesMap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImagesMap - 2020.02.26 at 18h 15m 34s.xml">
+      <configuration name="ImageParserTest.getImagesMap" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImageParserTest_getImagesMap - 2020.02.26 at 18h 18m 23s.xml">
+      <configuration name="ImageParserTest.getImagesMap" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="103403000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44113475" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47450426" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32765958" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ModuleMapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="18" column="36" selection-start-line="15" selection-start-column="7" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/entity/ImageModuleSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/entity/ImageModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/dao/ImageSourceIndexMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ImageSourceIndexMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/entity/ImagePath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/image/asianPhoto/19b05bfddf299f79d8a13c198129c34f.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/entity/ImagePathIndex.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/ImageHandlerImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/failed.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/ImageDownLoadHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/ScheduleConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/EuropePhotoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" selection-start-line="14" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/LegAndWaPhotoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" selection-start-line="14" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/MyselfPhotoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/dao/VisitModuleUrlMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/VisitModuleUrlMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/ImageHandlerInterface.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/dcits/ImageParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="121" column="21" lean-forward="true" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ImageModuleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/dao/ImageModuleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/AsianPhotoHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/main/subMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/main/HttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/HttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/main/ImageLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/io/DataOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="58" column="27" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/ScheduleConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/dao/ImageModuleSourceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ImageModuleSourceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" column="87" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/ImageDownLaodByXun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/download/ImageDownLoadHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1487">
+          <caret line="116" column="3" lean-forward="true" selection-start-line="116" selection-start-column="3" selection-end-line="116" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/inter/impl/ImageHandlerInterfaceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/handler/image/BeautifulPhotoHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathIndexMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ImagePathIndexMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/AsianImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="76" column="90" selection-start-line="76" selection-start-column="76" selection-end-line="76" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/beautiful/beautiful.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9600">
+          <caret line="400" column="91" selection-start-line="400" selection-start-column="91" selection-end-line="400" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/asian.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9576">
+          <caret line="399" column="83" selection-start-line="399" selection-start-column="83" selection-end-line="399" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/asian/asianInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9816">
+          <caret line="409" column="78" selection-start-line="409" selection-start-column="78" selection-end-line="409" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/entity/IndexModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/controller/image/BeautifulPhotoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="66" column="61" lean-forward="true" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dcits/dao/ImagePathMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ImagePathMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="30" column="67" lean-forward="true" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/page/image/beautiful/beautifulInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1222">
+          <caret line="413" column="116" selection-start-line="413" selection-start-column="116" selection-end-line="413" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>parser</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
